@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Camera Stream</title>
+    <style>
+        #videoElement {
+            width: 640px;
+            height: 480px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/static/images/evolkai.png" alt="evolkai_logo">
+        </nav>
+
+        <nav>
+            <p>Facial Emotion Detection</p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="camera">
+            <div>
+                <img id="videoElement" src="{{ url_for('video_feed') }}" width="640" height="480">
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+</html>
